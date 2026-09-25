@@ -1,0 +1,13 @@
+{
+  "name": "ECRU Fortune",
+  "short_name": "ECRU Fortune",
+  "start_url": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#E8E8EA",
+  "theme_color": "#E8E8EA",
+  "icons": [
+    { "src": "img/icon.svg", "sizes": "any", "type": "image/svg+xml" },
+    { "src": "img/icon-180.png", "sizes": "180x180", "type": "image/png" }
+  ]
+}

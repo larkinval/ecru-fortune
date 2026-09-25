@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#E8E8EA">
+  <title>ECRU Fortune — штаб</title>
+  <link rel="icon" href="img/icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/app.css">
+  <link rel="stylesheet" href="css/dashboard.css">
+</head>
+<body class="dash">
+  <header class="top">
+    <div class="marquee"><span class="m-gamma">гамма</span><i>✦</i><span class="m-logo" id="logo"></span><i>✦</i><span class="m-spectra">SPECTRA</span></div>
+    <div class="rod"></div>
+  </header>
+  <main class="dash-main">
+    <section class="total">
+      <div class="total-num"><span id="tWins">…</span><small>/ <span id="tQuota">26</span></small></div>
+      <div class="total-label">футболок разыграно</div>
+      <div class="total-meta" id="tMeta"></div>
+    </section>
+    <section class="cards" id="cards"></section>
+    <section class="nets-box">
+      <h3>Подписки по соцсетям</h3>
+      <div id="nets"></div>
+    </section>
+
+    <section class="admin" id="admin">
+      <h3>Подкрутка</h3>
+      <div class="locked" id="locked">
+        <input id="adminPin" type="password" inputmode="numeric" maxlength="4" placeholder="админ-PIN">
+        <button id="unlock">Открыть</button>
+      </div>
+      <div class="panel" id="panel" hidden>
+        <p class="lbl">Темп розыгрыша на всех телефонах</p>
+        <div class="boosts" id="boosts"></div>
+        <label class="row">Конец смены <input type="time" id="aEnd"></label>
+        <p class="lbl">Квоты</p>
+        <div class="quotas" id="quotas"></div>
+        <button class="pennant-btn" id="apply"><span>ПРИМЕНИТЬ</span></button>
+        <p class="msg" id="msg"></p>
+        <div class="danger">
+          <p class="lbl"><b>Сброс перед стартом.</b> Можно повторять (например, после каждой тренировки): тестовый лог уходит в архивный лист,
+          темп/конец/квоты — к исходным, все телефоны обнулятся за 30–60 секунд.</p>
+          <button id="resetAll">СБРОСИТЬ ВСЁ ПЕРЕД СТАРТОМ</button>
+        </div>
+      </div>
+    </section>
+    <p class="updated" id="updated"></p>
+  </main>
+  <script type="module" src="js/dashboard.js"></script>
+</body>
+</html>
